@@ -1,0 +1,54 @@
+The Attribute Selector
+
+Explanation: Some stuff or element, such as an input, can
+contain varying nature of inputs. Such as texts, numbers, 
+passwords, etc.
+
+So, say there is a sign up or login page, contianing two inputs:
+username [        ]
+password [        ]
+
+
+The username input is a 'text' type; whereas, the password input 
+is a 'password' type - which will display the inputted passwords
+in dotted masks [*******]
+
+
+So, to modify the username text color, and make it blue, for instance...
+
+We do the following:
+
+input[type="text"] {
+    color: blue;
+}
+
+This makes all password username inputs have a text color of
+blue.
+
+
+*************************************************************
+
+Even a class is an attribute. So we can say, any section,
+where class is equal to "post" should have a background color of
+grey.
+
+section[class="post"] {
+    background-color: grey;
+}
+
+
+That's just for showing that it is possible to select classes
+using that approach, but it may be better to just type the class 
+directly, i.e.
+
+.post {
+    background-color: grey;
+}
+
+...in this context, that is, in the use case of classes.
+
+We can also do:
+
+section.post {
+    background-color: grey;
+}
